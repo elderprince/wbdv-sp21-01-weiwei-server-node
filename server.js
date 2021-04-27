@@ -28,4 +28,4 @@ require('./controllers/quizzes-controller')(app)
 require('./controllers/questions-controller')(app)
 require('./controllers/quiz-attempts-controller')(app)
 
-app.listen(8080)
+app.listen('https://wbdv-sp21-01-weiwei-node.herokuapp.com/')
