@@ -2,7 +2,7 @@ require('dotenv').config()
 
 const mongodbUsername = process.env.mongodbRocketObjectUsername
 const mongodbPassword = process.env.mongodbRocketObjectPassword
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 3001;
 
 const express = require('express')
 const bodyParser = require('body-parser')
@@ -29,4 +29,6 @@ require('./controllers/quizzes-controller')(app)
 require('./controllers/questions-controller')(app)
 require('./controllers/quiz-attempts-controller')(app)
 
-app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
+app.listen(PORT);
+
+console.log('App listening on ' + PORT);
